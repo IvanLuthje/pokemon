@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pokemon</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='js/main.js'></script>
+</head>
+
+<body>
+    <div class="main">
+    <div class="col_izq">
+        <div class="imagen"> <a href="index.html"><img src='img/International_Pokémon_logo.svg.png'></a></div>
+        
+    </div>
+    <div class="col_der">
+
+        <h2><big><b>Contacto</b></big></h2>
+
+            <?php
+            $action=$_REQUEST['action'];
+            if ($action=="")   
+                {
+                ?>
+                <form  action="" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="action" value="submit">
+                <input name="name" placeholder="Nombre" type="text" value="" size="30"/><br>
+                <input name="email" placeholder="E-Mail" type="text" value="" size="30"/><br>
+                <textarea name="message" placeholder="Mensaje" rows="7" cols="30"></textarea><br>
+                <input type="submit" value="Enviar"/>
+                </form>
+                <?php
+                } 
+            else         
+                {
+                $name=$_REQUEST['ivan'];
+                $email=$_REQUEST['luthjeivan@gmail.com'];
+                $message=$_REQUEST['nn'];
+            
+            ?>
+            <div id="googleMap" style="width:100%;height:400px;">
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-I_6nQ-lajh4Y1oiGe1wYuBBn4SQhQFE&callback=myMap"></script>
+            </div>
+    </div>
+</body>
+        
+    
+    </div>
+    </div>   
+    <div class="main2">
+        <div class="col">
+            <div class="imagen"><img src='img/International_Pokémon_logo.svg.png'></div>
+        </div>
+    </div>
+</body>
+<footer>
+    Pokemon
+</footer>
+
+</html>
 
