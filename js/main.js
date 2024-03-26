@@ -9,3 +9,14 @@ function iniciarMap(){
         map: map
     });
 }
+
+$.ajax({
+    url: 'https://pokeapi.co/api/v2/pokemon/',
+    type: 'GET',
+    dataType: 'json',
+    success: function(Buscar){
+        $('<h1/>').text(json.title).appendTo('busqueda');
+        $('<div class="content"/>')
+        .html(index.html).appendTo('body');
+    }
+})
