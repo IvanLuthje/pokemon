@@ -22,8 +22,14 @@
     </div>
     <div class="col_der">
         <input class="nombre_pokemon" id="nombre" type="text" placeholder="Buscar">
+        <select name="" id="filtro">
+            <option value="nombre" id="opciones">Nombre</option>
+            <option value="tipos" id="opciones">Tipos</option>
+            <option value="item" id="opciones">Item</option>
+        </select>
         <button class="boton_busqueda" id="busqueda" type="button">Buscar</button>
-        <div class="datos_pokemon"></div>   
+        <div class="datos_pokemon"></div>
+        <div class="datos_item"></div>     
     </div>
     </div>
     
@@ -33,6 +39,7 @@
             <input class="nombre_pokemon" id="nombre" type="text" placeholder="Ingresar el nombre de un pokemon">
             <button class="boton_busqueda" id="busqueda" type="button">Buscar</button>
             <div class="datos_pokemon"></div> 
+            <div class="datos_item"></div> 
         </div>
     </div>
 </body>

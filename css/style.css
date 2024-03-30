@@ -36,12 +36,20 @@ body {
 
 .datos_pokemon{
     margin-left: 35%;
-    color:#ffffff;
+    color: #000000;
+}
+
+.datos_item{
+    color: #000000;
 }
 
 #googleMap {
 	height: 300px;
     width: 100%;
+}
+
+#filtro{
+    width: 80%;
 }
 
 .nombre_pokemon{
@@ -55,6 +63,11 @@ body {
 }
 
 .pokemon img{
+    width:200px;
+    height: 200px;
+}
+
+.item img{
     width:200px;
     height: 200px;
 }
@@ -85,6 +98,7 @@ body {
 
 @media screen and (min-width: 601px){
 	.main2{
-		visibility: hidden; 
+		visibility: hidden;
+        display: block;
 	}
 }
