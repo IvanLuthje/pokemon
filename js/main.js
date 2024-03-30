@@ -10,6 +10,15 @@ function iniciarMap(){
     });
 }
 
+function navegador() {
+    var x = document.getElementById("navegador1");
+    if (x.className === "navegador") {
+        x.className += " responsive";
+    } else {
+        x.className = "navegador";
+    }
+} 
+
 $(document).ready(function(){
     $("#busqueda").click(function(){
         let filtro = document.querySelector('#filtro');
