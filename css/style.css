@@ -58,7 +58,7 @@ a{
 
 .nombre_pokemon{
     margin-top: 10%;
-    width: 100%;
+    width: 99%;
 }
 
 .boton_busqueda{
@@ -112,7 +112,7 @@ a{
 	    
 	.boton_busqueda{
 	      margin-left: 15%;
-              width: 70%;
+          width: 70%;
 	      font-family: 'pokemon-font', sans-serif; 
 	}    
 	
