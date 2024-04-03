@@ -53,17 +53,20 @@ a{
 }
 
 #filtro{
-    width: 100%;
+    margin-left:15%;
+    width: 70%;
 }
 
 .nombre_pokemon{
-    margin-top: 10%;
-    width: 100%;
+    margin-top: 30%;
+    margin-left:15%;
+    width: 68%;
 }
 
 .boton_busqueda{
-    width: 100%;
-    font-family: 'pokemon-font', sans-serif; 
+    margin-left:15%;
+    width: 70%;
+    font-family: 'pokemon-font', sans-serif;
 }
 
 .pokemon img{
