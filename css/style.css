@@ -36,6 +36,7 @@ a{
     height:100%;
     background-color:#00435f;
     color: #ffffff;
+    font-family: 'pokemon-font', sans-serif; 
 }
 
 .datos_pokemon{
@@ -98,19 +99,26 @@ a{
 	.datos_pokemon{
 	    color:#000000;
 	}
+
+	body {
+		font-family: 'pokemon-font', sans-serif;
+		font-size: 0.8em;
+		margin: 0;
+		padding: 0;
+	}
 	
-	#filtro{
+	#filtro2{
 	     margin-left: 15%;
 	     width: 70%;
 	}
 	    
-	.nombre_pokemon{
+	.nombre_res{
 	      margin-top: 10%;
 	      margin-left: 15%;
 	      width: 68%;
 	}
 	    
-	.boton_busqueda{
+	.busqueda_res{
 	      margin-left: 15%;
           width: 70%;
 	      font-family: 'pokemon-font', sans-serif; 
@@ -139,6 +147,6 @@ a{
 @media screen and (min-width: 601px){
 	.main2{
 		visibility: hidden;
-        	display: none;
+        display: none;
 	}
 }
