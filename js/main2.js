@@ -1,15 +1,3 @@
-function iniciarMap(){
-    var coord = {lat:-34.922883333333, lng:-57.956316666667};
-    var map = new google.maps.Map(document.getElementById('googleMap'),{
-        zoom: 10,
-        center: coord
-    });
-    var marker = new google.maps.Marker({
-        position: coord,
-        map: map
-    });
-}
-
 function navegador() {
     var x = document.getElementById("navegador1");
     if (x.className === "navegador") {
@@ -24,7 +12,7 @@ function navegador() {
 $(document).ready(function(){
     $("#busqueda").click(function(){
         let filtro = document.querySelector('#filtro');
-        var nombre_pokemon = $("#nombre").val();
+        var nombre_pokemon = $("#nombre").val().toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
     
 
         if (filtro.value == 'nombre'){
@@ -106,6 +94,22 @@ $(document).ready(function(){
                 alert("Pokémon no disponible");
             },
             
+        });
+    }
+    if (filtro.value == 'sel'){
+        $.ajax({
+            url: "https://pokeapi.co/api/v2/item/" + nombre_pokemon, 
+            type: "GET",
+            dataType: "json",
+            success: function(dato_pokemon){
+
+            // $(".datos_pokemon").html("<h1>" + dato_pokemon.name + "</h1><img src='" + dato_pokemon.sprites.front_default + "' alt='" + dato_pokemon.name + "'><p>Peso: " + dato_pokemon.weight + "</p><p>Altura: " + dato_pokemon.height + "cm</p>");
+            $(".datos_pokemon").html("<h1>" + dato_pokemon.names[5].name + "</h1>" + "<div class='item'>" + "<img src='" + dato_pokemon.sprites.default + "'>" +  "</div>" + "<p>" + "Costo:  " +  dato_pokemon.cost +  "</p>" + "<p>" + "Tipo:  " +  dato_pokemon.category.name +  "</p>" + "Descripción: " + dato_pokemon.flavor_text_entries[13].text + "</p>" + "<button class='compartir'>" + "Compartir" + "</button>");
+            },
+            error: function(xhr, status, error) {
+                alert("Item no encontrado");
+            }
+        
         });
     }
     if (filtro.value == 'item'){

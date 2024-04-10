@@ -97,7 +97,8 @@ a{
 		background-color:#00435f;
 	}
 	.datos_pokemon{
-	    color:#000000;
+	    color:#fede84;
+		margin-left: 0%;
 	}
 
 	body {
@@ -122,6 +123,12 @@ a{
 	      margin-left: 15%;
           width: 70%;
 	      font-family: 'pokemon-font', sans-serif; 
+	}
+	#googleMap2 {
+		width: 100%;
+	}
+	.compartir{
+		width: 100%;
 	}    
 	
 	
