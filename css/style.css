@@ -132,28 +132,28 @@ a{
 	}    
 	
 	
+	nav a:not(:first-child) {display: none;}
+	nav a.icon {
+	   display: block;
+        }
+        nav.responsive {position: relative;}
+        nav.responsive .icon {
+	   position: absolute;
+	   right: 0;
+	   top: 0;
+        }
+
+       nav.responsive a {
+	   display: block;
+	   text-align: left;
+        }
 	
-	    nav a:not(:first-child) {display: none;}
-	 	nav a.icon {
-		    display: block;
-		}
-		nav.responsive {position: relative;}
-		nav.responsive .icon {
-		    position: absolute;
-		    right: 0;
-		    top: 0;
-		}
-	
-		nav.responsive a {
-		    display: block;
-		    text-align: left;
-		}
 }
     
 
 @media screen and (min-width: 601px){
 	.main2{
-		visibility: hidden;
+        visibility: hidden;
         display: none;
 	}
 }
