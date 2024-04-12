@@ -147,6 +147,10 @@ a{
 	   display: block;
 	   text-align: left;
         }
+
+	.titulo {
+	    margin-left:30%;
+	}
 	
 }
     
