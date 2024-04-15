@@ -98,7 +98,7 @@ function iniciarMapRes(){
 
     $("#busqueda_res").click(function(){
         let filtro = document.querySelector('#filtro2');
-        var nombre_pokemon = $("#nombre_res").val();
+        var nombre_pokemon = $("#nombre").val().toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
 
 
     if (filtro.value == 'nombre'){
