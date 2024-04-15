@@ -82,6 +82,10 @@ a{
     font-family: 'pokemon-font', sans-serif;
 }
 
+.comentario{
+	width: 99%;
+}
+
 
 
 @media screen and (max-width: 600px){
@@ -129,7 +133,14 @@ a{
 	}
 	.compartir{
 		width: 100%;
+	}
+	.comentario_res{
+		width: 90%;
+	}
+	.email_res{
+		width: 90%;
 	}    
+	
 	
 	
 	nav a:not(:first-child) {display: none;}
@@ -151,6 +162,7 @@ a{
 	.titulo {
 	    margin-left:30%;
 	}
+	
 	
 }
     

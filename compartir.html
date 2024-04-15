@@ -19,13 +19,25 @@
         <p><a href="contacto.html">Contacto</a></p>
     </div>
     <div class="col_der">
- 
+        <h2><big><b>Compartir</b></big></h2>
+        <input class="email" placeholder="E-mail" type="text" size="18"/><br>
+        <textarea class="comentario" name="comentario" placeholder="Comentario" style="height:200px"></textarea>
+        <input type="submit" onclick="validar()" value="Enviar" class="enviar" >
+        <input type="submit" onclick="cancelar()" value="Cancelar" class="cancel">
+        <input type="submit" id="re" onclick="reestablecer()" value="Restablecer valores">
     </div>
     </div>
     
     <div class="main2">
         <div class="col">
-
+            <div class="imagen"><a href="index.html"><img src='img/International_Pokémon_logo.svg.png'></a></div>
+            <h2><big><b>Compartir</b></big></h2>
+            <input class="email_res" placeholder="E-mail" type="text" size="18"/><br>
+            <textarea class="comentario_res" name="comentario" placeholder="Comentario" style="height:200px"></textarea>
+            <input type="submit" onclick="validar()" value="Enviar" id="enviar" >
+            <input type="submit" onclick="cancelar()" value="Cancelar" id="cancel">
+            <input type="submit" id="re" onclick="reestablecer()" value="Restablecer valores">
+            
         </div>
     </div>
 </body>
