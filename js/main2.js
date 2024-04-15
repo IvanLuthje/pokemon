@@ -12,7 +12,17 @@ function iniciarMap(){
 
 function compartir() {
     location.href = "compartir.html";
-}   
+}
+
+function cancelar() {
+    var respuesta = confirm('Desea volver a la pagina principal?');
+    if (respuesta == true){
+        location.href = "index.html"
+    }
+    else{
+        return false;
+    }
+};
 
 function navegador() {
     var x = document.getElementById("navegador1");
