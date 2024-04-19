@@ -12,6 +12,11 @@ function iniciarMap(){
 
 function compartir() {
     location.href = "compartir.html";
+    localStorage.setItem("nombre_pokemon", guardarPokemon); 
+}
+
+function enviar_resultado(comentario){
+    let guardarPokemon= JSON.parse(guardarPersona);
 }
 
 function cancelar() {
