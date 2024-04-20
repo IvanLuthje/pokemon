@@ -12,6 +12,11 @@ function iniciarMap(){
 
 function compartir() {
     location.href = "compartir.html";
+    localStorage.setItem("nombre_pokemon", guardarPokemon); 
+}
+
+function enviar_resultado(comentario){
+    let guardarPokemon= JSON.parse(guardarPersona);
 }
 
 function cancelar() {
@@ -55,7 +60,7 @@ $(document).ready(function(){
                console.log(dato_pokemon); 
             },
             error: function(xhr, status, error) {
-                alert("PokÃ©mon no disponible");
+                alert("Pokémon no disponible");
             },
             
         });
@@ -68,7 +73,7 @@ $(document).ready(function(){
             success: function(dato_pokemon){
 
                // $(".datos_pokemon").html("<h1>" + dato_pokemon.name + "</h1><img src='" + dato_pokemon.sprites.front_default + "' alt='" + dato_pokemon.name + "'><p>Peso: " + dato_pokemon.weight + "</p><p>Altura: " + dato_pokemon.height + "cm</p>");
-               $(".datos_pokemon").html("<div class ='titulo'>" + "<h1>" + dato_pokemon.names[5].name + "</h1>" + "</div>" + "<div class='item'>" + "<img src='" + dato_pokemon.sprites.default + "'>" +  "</div>" + "<p>" + "Costo:  " +  dato_pokemon.cost +  "</p>" + "<p>" + "Tipo:  " +  dato_pokemon.category.name +  "</p>" + "DescripciÃ³n: " + dato_pokemon.flavor_text_entries[13].text + "</p>" + "<button class='compartir' onClick='compartir()'> " + "Compartir" + "</button>");
+               $(".datos_pokemon").html("<div class ='titulo'>" + "<h1>" + dato_pokemon.names[5].name + "</h1>" + "</div>" + "<div class='item'>" + "<img src='" + dato_pokemon.sprites.default + "'>" +  "</div>" + "<p>" + "Costo:  " +  dato_pokemon.cost +  "</p>" + "<p>" + "Tipo:  " +  dato_pokemon.category.name +  "</p>" + "Descripción: " + dato_pokemon.flavor_text_entries[13].text + "</p>" + "<button class='compartir' onClick='compartir()'> " + "Compartir" + "</button>");
             },
             error: function(xhr, status, error) {
                 alert("Item no encontrado");
@@ -126,7 +131,7 @@ function iniciarMapRes(){
             console.log(dato_pokemon); 
             },
             error: function(xhr, status, error) {
-                alert("PokÃ©mon no disponible");
+                alert("Pokémon no disponible");
             },
             
         });
@@ -150,7 +155,7 @@ function iniciarMapRes(){
             }
         },
             error: function(xhr, status, error) {
-                alert("PokÃ©mon no disponible");
+                alert("Pokémon no disponible");
             },
             
         });
@@ -164,7 +169,7 @@ function iniciarMapRes(){
             success: function(dato_pokemon){
 
             // $(".datos_pokemon").html("<h1>" + dato_pokemon.name + "</h1><img src='" + dato_pokemon.sprites.front_default + "' alt='" + dato_pokemon.name + "'><p>Peso: " + dato_pokemon.weight + "</p><p>Altura: " + dato_pokemon.height + "cm</p>");
-            $(".datos_pokemon").html("<div class ='titulo'>" + "<h1>" + dato_pokemon.names[5].name + "</h1>" + "<div class='item'>" + "<img src='" + dato_pokemon.sprites.default + "'>" +  "</div>" + "</div>" + "<p>" + "Costo:  " +  dato_pokemon.cost +  "</p>" + "<p>" + "Tipo:  " +  dato_pokemon.category.name +  "</p>" + "DescripciÃ³n: " + dato_pokemon.flavor_text_entries[13].text + "</p>" + "<button class='compartir' onClick='compartir()'>" + "Compartir" + "</button>");
+            $(".datos_pokemon").html("<div class ='titulo'>" + "<h1>" + dato_pokemon.names[5].name + "</h1>" + "<div class='item'>" + "<img src='" + dato_pokemon.sprites.default + "'>" +  "</div>" + "</div>" + "<p>" + "Costo:  " +  dato_pokemon.cost +  "</p>" + "<p>" + "Tipo:  " +  dato_pokemon.category.name +  "</p>" + "Descripción: " + dato_pokemon.flavor_text_entries[13].text + "</p>" + "<button class='compartir' onClick='compartir()'>" + "Compartir" + "</button>");
             },
             error: function(xhr, status, error) {
                 alert("Item no encontrado");
@@ -203,7 +208,7 @@ function iniciarMapRes(){
             $(".datos_pokemon").html("<h1>" + dato_pokemon.name + "</h1>" + "<div class='pokemon'>" + "<img src='" + dato_pokemon.sprites.front_default + "'>" + "</div>" + "<p>Peso:" + dato_pokemon.weight + "Kg</p>"  + "<p>Formas:" + dato_pokemon.forms + "Kg</p>" + "<p>Altura: " + dato_pokemon.height + "m</p>");
             },
             error: function(xhr, status, error) {
-                alert("PokÃ©mon no disponible");
+                alert("Pokémon no disponible");
             }
         });
     });
