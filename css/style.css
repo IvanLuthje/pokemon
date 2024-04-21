@@ -102,8 +102,9 @@ a{
 		background-color:#00435f;
 	}
 	.datos_pokemon{
-	  color:#fede84;
+		color:#fede84;
 		margin-left: 0%;
+		width: 100%;
 	}
 
 	body {
@@ -114,20 +115,20 @@ a{
 	}
 	
 	#filtro2{
-	     margin-left: 15%;
-	     width: 70%;
+	    margin-left: 15%;
+	    width: 70%;
 	}
 	    
 	.nombre_res{
-	      margin-top: 10%;
-	      margin-left: 15%;
-	      width: 68%;
+	    margin-top: 10%;
+	    margin-left: 15%;
+	    width: 68%;
 	}
 	    
 	.busqueda_res{
-	      margin-left: 15%;
+	    margin-left: 15%;
         width: 70%;
-	      font-family: 'pokemon-font', sans-serif; 
+	    font-family: 'pokemon-font', sans-serif; 
 	}
 	#googleMap2 {
 		width: 100%;

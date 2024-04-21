@@ -139,7 +139,7 @@ function iniciarMapRes(){
 
     if (filtro.value == 'sel'){
         $.ajax({
-            url: 'https://pokeapi.co/api/v2/pokemon/' + nombre_pokemon, 
+            url: 'https://pokeapi.co/api/v2/pokemon/', 
             type: "GET",
             timeout: 0,
             data: "{limit:10}",
