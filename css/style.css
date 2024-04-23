@@ -28,6 +28,16 @@ a{
     background-color: #fede84;
 }
 
+.col_der_comp{
+    position: absolute;
+    margin-left: 1%;
+    top:0;
+    left:15%; 
+    width:85%;
+    height:1080px;
+    background-color: #1f7042;
+}
+
 .col_izq{
     position:absolute;
     top:0;
@@ -35,6 +45,17 @@ a{
     width:15%;
     height:1080px;
     background-color:#00435f;
+    color: #ffffff;
+    font-family: 'pokemon-font', sans-serif; 
+}
+
+.col_izq_comp{
+    position:absolute;
+    top:0;
+    left:0;
+    width:15%;
+    height:1080px;
+    background-color:#fede84;
     color: #ffffff;
     font-family: 'pokemon-font', sans-serif; 
 }
