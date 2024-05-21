@@ -47,7 +47,7 @@ $(document).ready(function(){
 
     if (filtro.value == 'nombre'){
         $.ajax({
-            url: 'https://pokeapi.co/api/v2/pokemon?limit=20&offset=0', 
+            url: 'https://pokeapi.co/api/v2/pokemon/' + nombre_pokemon, 
             type: "GET",
             timeout: 0,
             dataType: "json",
@@ -120,8 +120,7 @@ function iniciarMapRes(){
 
     if (filtro.value == 'nombre'){
         $.ajax({
-            url: 'https://pokeapi.co/api/v2/pokemon?limit=150',
-
+            url: 'https://pokeapi.co/api/v2/pokemon/' + nombre_pokemon,
             type: "GET",
             timeout: 0,
             dataType: "json",
