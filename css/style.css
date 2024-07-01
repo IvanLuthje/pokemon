@@ -112,8 +112,7 @@ a{
 
 @media screen and (max-width: 600px){
 	.main {
-		visibility:hidden; 
-		display: none;
+		visibility:hidden;
 	} 
 	.col {
 		position:absolute;
@@ -200,6 +199,5 @@ a{
 @media screen and (min-width: 601px){
 	.main2{
         visibility: hidden;
-        display: none;
 	}
 }
