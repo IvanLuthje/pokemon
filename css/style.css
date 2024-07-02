@@ -154,10 +154,11 @@ a{
 	    
 	.busqueda_res{
 	    margin-left: 15%;
-            width: 70%;
+        width: 70%;
 	    font-family: 'pokemon-font', sans-serif; 
 	}
-	#googleMap2 {
+	
+	#googleMap {
 		width: 100%;
 	}
 	.compartir{

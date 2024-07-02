@@ -7,6 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <script src='js/main.js'></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbOlqUZRniaWbnJnwxD81hGUPYnBELCyA&callback=console.debug&libraries=maps,marker&v=beta"></script>
 </head>
 
 <body>
@@ -41,9 +42,11 @@
             
             ?> -->
 
-            <div id="googleMap"></div>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script> 
-           
+            <div id="googleMap">
+                <gmp-map center="-34.922883333333,-57.956316666667" zoom="15" map-id="map">
+                    <gmp-advanced-marker position="-34.922883333333,-57.956316666667" title="Mi localizacion"></gmp-advanced-marker>          
+                </gmp-map>
+            </div>
     </div>
     </div>
    
@@ -51,8 +54,11 @@
         <div class="col">
             <div class="imagen"><img src='img/International_Pokémon_logo.svg.png'></div>
             <h2><big><b>Contacto</b></big></h2>
-            <div id="googleMap2"></div>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script> 
+            <div id="googleMap">
+                <gmp-map center="-34.922883333333,-57.956316666667" zoom="15" map-id="map_responsive">
+                    <gmp-advanced-marker position="-34.922883333333,-57.956316666667" title="Mi localizacion"></gmp-advanced-marker>          
+                </gmp-map>
+            </div>
         </div>    
     </div>
 </body>
@@ -62,3 +68,4 @@
 
 </html>
 
+lat:, lng:}  
